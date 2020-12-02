@@ -11,6 +11,7 @@ body {
   justify-content: space-evenly;
   background-color: #f5f6fa;
   padding: 20px;
+  
 }
 
 .app__dropdown {
@@ -31,11 +32,20 @@ body {
 
 .app__stats {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 80px 0px 0px 20px;
+
+}
+
+.infobox_ind {
+  margin: 10px;
 }
 
 .app__left {
   flex: 0.9;
+  margin: 10px;
+
 }
 
 .app__information > h3 {
@@ -49,8 +59,23 @@ body {
   margin-top: 1rem;
 }
 
+.footer {
+  align-items: bottom;
+  width:100% !important;
+  height:120px;
+  background-color:#030303;
+  position:absolute;
+  bottom:0px;
+}
+
 @media (max-width: 990px) {
   .app {
     flex-direction: column;
+  }
+  .app__stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 0px 10px 0px;
   }
 }
