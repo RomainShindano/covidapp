@@ -6,8 +6,6 @@ import {
   Select,
   Card,
   CardContent,
-  AppBar,
-  Toolbar,
 } from "@material-ui/core";
 import InfoBox from "./InfoBox";
 import LineGraph from "./LineGraph";
@@ -103,6 +101,12 @@ const App = () => {
             </Select>
           </FormControl>
         </div>
+        <Map 
+          countries={mapCountries}
+          casesType={casesType}
+          center={mapCenter}
+          zoom={mapZoom}
+        />
         <div className="app__stats">
           <InfoBox
             onClick={(e) => setCasesType("cases")}
@@ -128,12 +132,7 @@ const App = () => {
             total={numeral(countryInfo.deaths).format("0.0a")}
           />
         </div>
-        <Map 
-          countries={mapCountries}
-          casesType={casesType}
-          center={mapCenter}
-          zoom={mapZoom}
-        />
+        
       
       </div>
       <br/>
