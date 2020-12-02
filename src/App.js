@@ -83,6 +83,7 @@ const App = () => {
   };
 
   return (
+    <>
     <div className="app">
       <div className="app__left">
         <div className="app__header">
@@ -147,6 +148,10 @@ const App = () => {
         </CardContent>
       </Card>
     </div>
+    <div className="footer">
+
+    </div>
+    </>
   );
 };
 

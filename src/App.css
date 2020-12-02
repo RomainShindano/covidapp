@@ -38,6 +38,15 @@ body {
   flex: 0.9;
 }
 
+.footer {
+  align-items: bottom;
+  width:100% !important;
+  height:120px;
+  background-color:#030303;
+  position:absolute;
+  bottom:0px;
+}
+
 .app__information > h3 {
   color: #6a5d5d;
   font-weight: 400;
