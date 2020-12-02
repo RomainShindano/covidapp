@@ -6,6 +6,8 @@ import {
   Select,
   Card,
   CardContent,
+  AppBar,
+  Toolbar,
 } from "@material-ui/core";
 import InfoBox from "./InfoBox";
 import LineGraph from "./LineGraph";
@@ -86,7 +88,8 @@ const App = () => {
     <div className="app">
       <div className="app__left">
         <div className="app__header">
-          <h1>COVID-19 Tracker</h1>
+          <h1>COVIDAPP</h1>
+   
           <FormControl className="app__dropdown">
             <Select
               variant="outlined"
@@ -125,13 +128,15 @@ const App = () => {
             total={numeral(countryInfo.deaths).format("0.0a")}
           />
         </div>
-        <Map
+        <Map 
           countries={mapCountries}
           casesType={casesType}
           center={mapCenter}
           zoom={mapZoom}
         />
+      
       </div>
+      <br/>
       <Card className="app__right">
         <CardContent>
           <div className="app__information">
