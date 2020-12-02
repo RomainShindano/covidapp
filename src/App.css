@@ -1,5 +1,5 @@
-* {
-  margin: 0;
+*{
+  margin-top: 7px;
 }
 
 body {
@@ -11,7 +11,6 @@ body {
   justify-content: space-evenly;
   background-color: #f5f6fa;
   padding: 20px;
-  
 }
 
 .app__dropdown {
@@ -32,33 +31,12 @@ body {
 
 .app__stats {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 80px 0px 0px 20px;
-
-}
-
-.infobox_ind {
-  margin: 10px;
+  justify-content: space-between;
 }
 
 .app__left {
   flex: 0.9;
-  margin: 10px;
-
 }
-
-.app__information > h3 {
-  color: #6a5d5d;
-  font-weight: 400;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.app__information > h3:last-of-type {
-  margin-top: 1rem;
-}
-
 .footer {
   align-items: bottom;
   width:100% !important;
@@ -68,14 +46,20 @@ body {
   bottom:0px;
 }
 
+.app__information > h3 {
+  color: #6a5d5d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.app__information > h3:last-of-type {
+  margin-top: 1rem;
+}
+
 @media (max-width: 990px) {
   .app {
     flex-direction: column;
-  }
-  .app__stats {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0px 0px 10px 0px;
   }
 }

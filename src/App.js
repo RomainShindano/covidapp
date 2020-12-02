@@ -84,8 +84,8 @@ const App = () => {
 
   return (
     <>
-    <div className="app" xs={12}>
-      <div className="app__left" xs={12} lg={5}>
+     <div className="app">
+      <div className="app__left">
         <div className="app__header">
           <h1>COVIDAPP</h1>
    
@@ -102,19 +102,14 @@ const App = () => {
             </Select>
           </FormControl>
         </div>
-        
-        <Map lg={6} xs={12}
+        <Map 
           countries={mapCountries}
           casesType={casesType}
           center={mapCenter}
           zoom={mapZoom}
         />
- 
-      </div>
-    
-      <div className="app__stats" lg={2} xs={12}>
-        <div className="infobox_ind">
-        <InfoBox 
+        <div className="app__stats">
+          <InfoBox
             onClick={(e) => setCasesType("cases")}
             title="Coronavirus Cases"
             isRed
@@ -122,20 +117,14 @@ const App = () => {
             cases={prettyPrintStat(countryInfo.todayCases)}
             total={numeral(countryInfo.cases).format("0.0a")}
           />
-        </div>
-          
-        <div className="infobox_ind">
-        <InfoBox
+          <InfoBox
             onClick={(e) => setCasesType("recovered")}
             title="Recovered"
             active={casesType === "recovered"}
             cases={prettyPrintStat(countryInfo.todayRecovered)}
             total={numeral(countryInfo.recovered).format("0.0a")}
           />
-        </div>
-          
-        <div className="infobox_ind">
-        <InfoBox
+          <InfoBox
             onClick={(e) => setCasesType("deaths")}
             title="Deaths"
             isRed
@@ -144,8 +133,10 @@ const App = () => {
             total={numeral(countryInfo.deaths).format("0.0a")}
           />
         </div>
-         
+        
+      
       </div>
+      <br/>
       <Card className="app__right">
         <CardContent>
           <div className="app__information">
