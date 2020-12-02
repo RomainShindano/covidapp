@@ -76,7 +76,7 @@ const App = () => {
              console.log('lat and long ' , data.countryInfo.lat, data.countryInfo.long);
              setMapCenter({lat : data.countryInfo.lat, lng : data.countryInfo.long});
              if (countryCode !== 'worldwide'){
-              setMapZoom(4);
+              setMapZoom(5);
              }
            }
       });
