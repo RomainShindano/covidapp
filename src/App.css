@@ -56,11 +56,11 @@ body {
 }
 
 .footer .footer_right a:link,:visited{
-  color:rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
   text-decoration:none;
 }
 a:link ,a:hover{
-  color:green;
+  color:rgb(249, 178, 0);
 }
 .footer .footer_right a:link{
   list-style: none;
@@ -75,7 +75,7 @@ a:link ,a:hover{
 .footer_left{
   padding-top: 12px;
   padding-left: 150px;
-  color:white;
+  color:rgb(0, 0, 0);
   width:450px;
 }
 
@@ -85,6 +85,22 @@ a:link ,a:hover{
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
+.about_us{
+  align-items: center;
+  color:slategray;
+  margin-top: 2rem;
+  text-align: center;
+  
+}
+.about_us a:link{
+  text-decoration: none;
+}
+.about_us a:hover{
+  text-decoration: none;
+  color:rgb(255, 153, 0)
+}
+
+
 
 
 .app__information > h3:last-of-type {

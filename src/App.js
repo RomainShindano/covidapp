@@ -146,10 +146,17 @@ const App = () => {
             <h3>Worldwide new {casesType}</h3>
             <LineGraph casesType={casesType} />
           </div>
+          <div className="about_us footer_right_ul">
+          <h3>
+            <a href="https://www.oxide-digital.com/about-us/">About Us</a>
+          </h3>
+          </div>
+          
         </CardContent>
+        
       </Card>
     </div>
-    <div className="footer">
+    {/* <div className="footer">
         <div className="footer_left">
           <Typography>This is a CovidApp</Typography>
           <Typography>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</Typography>
@@ -162,8 +169,7 @@ const App = () => {
               </li>
           </ul>
         </div>
-    </div>
-    
+    </div> */}
     </>
   );
 };
